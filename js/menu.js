@@ -106,7 +106,6 @@ menu.forEach((item) => {
 });
 
 
-// goTop
 let goTopBtn = document.getElementById('goTopBtn');
 document.addEventListener('DOMContentLoaded', function () {
 
