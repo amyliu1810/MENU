@@ -43,8 +43,7 @@ const menu = [
     },
     {
         name: '靜宜早點',
-        img_path: 'https://lh3.googleusercontent.com/xlh3V1Ds94YENvFPZWNkee-M7kFOGk36Z2SQhXZKENsNfzimQNH4tqF7eDv3RCYHUrrhlKKhQD9dlQH2AepVCg10WLpdyME=s360',
-        address: '臺中市南區復興路三段164號',
+        img_path: 'https://liz-chiang.com/wp-content/uploads/2022/01/20220107112936_80.jpg',
         star: 4.2,
         google_map: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.1735615591338!2d120.67168797609361!3d24.13054217407482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d05a8b2d033%3A0x91b6e03008d53a6d!2z6Z2c5a6c5pep6bue!5e0!3m2!1szh-TW!2stw!4v1692773493594!5m2!1szh-TW!2stw"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     },
@@ -97,11 +96,33 @@ menu.forEach((item) => {
                     alt="恰吉 可頌＆咖啡">
             </div>
             <div class="title">${item.name}</div>
-            <div class="address">${item.address}</div>
-            <div class="star">${item.star} 星
+            <div class="address">📍 ${item.address}</div>
+            <div class="star">⭐ ${item.star}
                 <span class="yellow"></span>
             </div>
             <div class="map">${item.google_map}</div>
         </div>
     </div>`;
+});
+
+
+// goTop
+let goTopBtn = document.getElementById('goTopBtn');
+document.addEventListener('DOMContentLoaded', function () {
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            goTopBtn.style.display = 'block';
+        } else {
+            goTopBtn.style.display = 'none';
+        }
+    });
+
+    goTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
 });
