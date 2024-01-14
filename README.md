@@ -1,4 +1,6 @@
-# ~ Gourmet Pocket List ~
-網址連結：https://amyliu1810.github.io/MENU/
+## Gourmet Pocket List
 
-![index](https://github.com/amyliu1810/MENU/assets/143366312/859c6d41-3a31-487e-a494-40349cc6ea4c)
+**Demo**  
+https://amyliu1810.github.io/MENU/
+
+![index](https://github.com/amyliu1810/MENU/assets/143366312/30028326-7b6a-496e-b473-146829260ff9)
